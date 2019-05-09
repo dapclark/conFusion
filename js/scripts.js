@@ -1,0 +1,30 @@
+$("#carouselButton").click(function(){
+    if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+        $("#mycarousel").carousel('pause');
+        $("#carouselButton").children("span").removeClass('fa-pause');
+        $("#carouselButton").children("span").addClass('fa-play');
+    }
+    else if ($("#carouselButton").children("span").hasClass('fa-play')){
+        $("#mycarousel").carousel('cycle');
+        $("#carouselButton").children("span").removeClass('fa-play');
+        $("#carouselButton").children("span").addClass('fa-pause');
+    }
+});
+$("#openresmodal").click(function(){
+    $("#reservationModal").modal('show');
+});
+$("#closeresmodal").click(function(){
+    $("#reservationModal").modal('hide');
+});
+$("#cancelresmodal").click(function(){
+    $("#reservationModal").modal('hide');
+});
+$("#openloginmodal").click(function(){
+    $("#loginModal").modal('show');
+});
+$("#closeloginmodal").click(function(){
+    $("#loginModal").modal('hide');
+});
+$("#cancelloginmodal").click(function(){
+    $("#loginModal").modal('hide');
+});
